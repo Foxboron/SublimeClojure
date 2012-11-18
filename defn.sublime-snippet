@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[(defn ${1:name} ${2:
+    "${3:doc-string}"
+    }[${4:arg-list}]
+    $0)
+    ]]></content>
+    <tabTrigger>defn</tabTrigger>
+    <scope>source.clojure</scope>
+    <description>defn</description>
+</snippet>

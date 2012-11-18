@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[(deftype ${1:Name} [${2:fields}]
+    ${3:Protocol}
+    $0)
+    ]]></content>
+    <tabTrigger>(deftype</tabTrigger>
+    <scope>source.clojure</scope>
+    <description>deftype'</description>
+</snippet>

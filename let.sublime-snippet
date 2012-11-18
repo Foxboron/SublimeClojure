@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[(let [$0])]]></content>
+    <tabTrigger>(let</tabTrigger>
+    <scope>source.clojure</scope>
+    <description>let</description>
+</snippet>

@@ -1,0 +1,31 @@
+{
+  "cmd": ["lein", "compile", ":all"],
+  "working_dir": "$file",
+  "selector": "source.clojure",
+  "variants": [
+    { "cmd": ["lein", "marg", "-m", "-d", "docs"],
+      "name": "Lein: Documentation"
+    },
+    { "cmd": ["lein", "clean"],
+      "name": "Lein: Clean"
+    },
+    { "cmd": ["lein", "run"],
+      "name": "Lein: Run"
+    },
+    { "cmd": ["lein", "test"],
+      "name": "Lein: Test"
+    },
+    { "cmd": ["lein", "retest"],
+      "name": "Lein: Re-test"
+    },
+    { "cmd": ["lein", "uberjar"],
+      "name": "Lein: Uberjar"
+    },
+    { "cmd": ["lein", "jar"],
+      "name": "Lein: Jar"
+    },
+    { "cmd": ["lein", "check"],
+      "name": "Lein: Check"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[(defmethod ${1:name} ${2:match}
+    [${3:args}]
+    $0)]]></content>
+    <tabTrigger>(defmethod</tabTrigger>
+    <scope>source.clojure</scope>
+    <description>Method</description>
+</snippet>

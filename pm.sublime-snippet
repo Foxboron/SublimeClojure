@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[(${1:name} [${2:this} ${3:args}])]]></content>
+    <tabTrigger>(pm</tabTrigger>
+    <scope>source.clojure</scope>
+    <description>protocol method</description>
+</snippet>
