@@ -3,7 +3,7 @@
     (time
       (dotimes [_ ${1:times}]
         $0)))]]></content>
-    <tabTrigger>(dotime</tabTrigger>
+    <tabTrigger>dotime</tabTrigger>
     <scope>source.clojure</scope>
     <description>perf</description>
 </snippet>

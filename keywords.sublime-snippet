@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[& {:keys [${1:keys}] :or {${2:defaults}}}]]></content>
-    <tabTrigger>{:keys</tabTrigger>
+    <tabTrigger>kwargs</tabTrigger>
     <scope>source.clojure</scope>
     <description>Keyword args</description>
 </snippet>

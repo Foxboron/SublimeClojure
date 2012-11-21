@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[(run* [q]
     $0)]]></content>
-    <tabTrigger>(run*</tabTrigger>
+    <tabTrigger>r*</tabTrigger>
     <scope>source.clojure</scope>
     <description>run*</description>
 </snippet>
