@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[(dotimes [_ 10]
-    (time
-      (dotimes [_ ${1:times}]
-        $0)))]]></content>
+  (time
+    (dotimes [_ ${1:times}]
+      $0)))]]></content>
     <tabTrigger>dotime</tabTrigger>
     <scope>source.clojure</scope>
     <description>perf</description>

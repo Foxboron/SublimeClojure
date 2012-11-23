@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[(:require [${1:namespace} :as [$0]])]]></content>
+    <content><![CDATA[(:require [${1:namespace}${2: :as [${3:name}]}])]]></content>
     <tabTrigger>require</tabTrigger>
     <scope>source.clojure</scope>
     <description>require</description>
