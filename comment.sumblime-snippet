@@ -4,6 +4,6 @@
     <description>Comment</description>
 
     <content><![CDATA[(comment
-    $0
-    )]]></content>
+  $0
+  )]]></content>
 </snippet>

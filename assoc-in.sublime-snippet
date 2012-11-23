@@ -2,6 +2,5 @@
     <tabTrigger>assoc</tabTrigger>
     <scope>source.clojure</scope>
     <description>Assoc-in</description>
-
     <content><![CDATA[(assoc-in ${1:assoc-struct} [${2:keys}] ${3:value}) ]]></content>
 </snippet>
