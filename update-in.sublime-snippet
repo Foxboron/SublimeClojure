@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[(update-in ${1:assoc-struct} [${2:keys}]
+  ${3:fn args})]]></content>
+    <tabTrigger>update-in</tabTrigger>
+    <scope>source.clojure</scope>
+    <description>update-in</description>
+</snippet>

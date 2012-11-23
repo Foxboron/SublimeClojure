@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[(format "${1:format}" ${2:strings})]]></content>
+    <tabTrigger>format</tabTrigger>
+    <scope>source.clojure</scope>
+    <description>format</description>
+</snippet>
