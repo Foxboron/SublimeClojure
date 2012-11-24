@@ -1,0 +1,20 @@
+{
+    "schema_version": "1.0",
+    "packages": [
+        {
+            "name": "Clojure Snippets&Build",
+            "description": "The description of your package",
+            "author": "Foxboron",
+            "homepage": "https://github.com/Foxboron/SublimeClojure",
+            "last_modified": "2012-11-24 15:41:00",
+            "platforms": {
+                "*": [
+                    {
+                        "version": "1.0",
+                        "url": "https://nodeload.github.com/Foxboron/SublimeClojure/zip/1.0"
+                    }
+                ]
+            }
+        }
+    ]
+}
