@@ -1,9 +1,8 @@
 <snippet>
-    <tabTrigger>com</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>Comment</description>
-
     <content><![CDATA[(comment
   $0
   )]]></content>
+    <tabTrigger>com</tabTrigger>
+    <scope>source.clojure</scope>
+    <description>Comment</description>
 </snippet>
