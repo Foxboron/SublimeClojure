@@ -1,5 +1,5 @@
-C
-urce.clojure",
+{
+    "scope": "source.clojure",
 
     "completions":
     [
@@ -123,11 +123,11 @@ urce.clojure",
         {"trigger":"update-in","contents":"(update-in ${1:assoc-struct} [${2:keys}]\n  ${3:fn args})","description":"update-in"},
         {"trigger":"use","contents":"(:use [${1:namespace}${2: :only [${3:fns}]}])","description":"use"},
         
-	// Errors and Exceptions
-	//None
+    	// Errors and Exceptions
+    	//None
         
-	// 'Magic' Methods
-	//None
+    	// 'Magic' Methods
+    	//None
 
         // Standard Library
         "clojure.contrib.accumulators","clojure.contrib.agent-utils","clojure.contrib.apply-macro",
