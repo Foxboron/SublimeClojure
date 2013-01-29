@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[(defmulti ${1:name} ${2:dispatch-fn})]]></content>
-    <tabTrigger>defmm</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>Defmulti</description>
-</snippet>

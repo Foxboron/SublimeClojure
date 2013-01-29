@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[(:use [${1:namespace}${2: :only [${3:fns}]}])]]></content>
-    <tabTrigger>use</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>use</description>
-</snippet>

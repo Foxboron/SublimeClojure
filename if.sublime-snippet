@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[(if ${1:test-expr}
-  ${2:then-expr}
-  ${3:else-expr})]]></content>
-    <tabTrigger>if</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>if</description>
-</snippet>

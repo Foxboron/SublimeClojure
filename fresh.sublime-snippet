@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[(fresh [${1:vars}]
-  $0)]]></content>
-    <tabTrigger>fr</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>fresh</description>
-</snippet>

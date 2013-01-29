@@ -1,9 +1,0 @@
-<snippet>
-    <content><![CDATA[(doseq [${1:value} ${2:range}${3:
-      :let [${5:symbol} ${6:expr}]}${7:
-      :when ${8:conditional}}]
-  ${9:exprs})]]></content>
-    <tabTrigger>doseq</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>doseq</description>
-</snippet>

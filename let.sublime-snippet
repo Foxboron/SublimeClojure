@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[(let [$1]
-  $0)]]></content>
-    <tabTrigger>let</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>let</description>
-</snippet>

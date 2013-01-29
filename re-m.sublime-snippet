@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[(re-matches #"${1:regex}" ${2:string})]]></content>
-    <tabTrigger>re-m</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>Regex Matches</description>
-</snippet>

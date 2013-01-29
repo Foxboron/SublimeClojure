@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[(defprotocol ${1:Name}
-  $0)]]></content>
-    <tabTrigger>defp</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>defprotocol</description>
-</snippet>

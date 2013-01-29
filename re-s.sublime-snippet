@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[(re-seq #"${1:regex}" ${2:string})]]></content>
-    <tabTrigger>re-s</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>Regex Seq</description>
-</snippet>

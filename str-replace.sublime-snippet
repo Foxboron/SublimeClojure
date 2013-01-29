@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[(${1:clojure.string}/replace ${2:string} #"${3:regex}" ${4:replacement})]]></content>
-    <tabTrigger>str-replace</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>String Replace</description>
-</snippet>

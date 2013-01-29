@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[(run ${1:n} [q]
-  $0)]]></content>
-    <tabTrigger>rn</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>run n</description>
-</snippet>

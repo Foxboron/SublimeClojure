@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[(condp ${1:pred} ${2:expr}
-  $0)]]></content>
-    <tabTrigger>condp</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>condp</description>
-</snippet>

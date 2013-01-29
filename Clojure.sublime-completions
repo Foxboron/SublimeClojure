@@ -1,0 +1,50 @@
+{
+    "scope": "source.clojure",
+
+    "completions":
+    [
+        // keywords
+
+        // built-in functions
+        {"trigger":"require","contents":"(:require [${1:namespace}${2: :as [${3:name}]})","description":"require"},
+        {"trigger":"assoc","contents":"(assoc-in ${1:assoc-struct} [${2:keys}] ${3:value})","description":"Assoc-In"},
+        {"trigger":"com","contents":"(comment\n  $0\n  )","description":"comment"},
+        {"trigger":"condp","contents":"(condp ${1:pred} ${2:expr}\n  $0)","description":"condp"},
+        {"trigger":"defm","contents":"(defmethod ${1:name} ${2:match}\n  [${3:args}]\n  $0)","description":"defmethod"},
+        {"trigger":"defmm","contents":"(defmulti ${1:name} ${2:dispatch-fn})","description":"defmulti"},
+        {"trigger":"defn","contents":"defn ${1:name} ${2:\n  \"${3:doc-string}\"\n  }[${4:arg-list}]\n  $0)","description":"defn"},
+        {"trigger":"defp","contents":"(defprotocol ${1:Name}\n  $0)","description":"defprotocol"},
+        {"trigger":"defr","contents":"(defrecord ${1:Name} [${2:fields}]\n  ${3:Protocol}\n  $0)","description":"defrecord"},
+        {"trigger":"deftest","contents":"(deftest test-${1:name}\n  $0)","description":"deftest"},
+        {"trigger":"doseq","contents":"(doseq [${1:value} ${2:range}${3:\n      :let [${5:symbol} ${6:expr}]}${7:\n      :when ${8:conditional}}]\n  ${9:exprs})","description":"doseq"},
+        {"trigger":"deft","contents":"(deftype ${1:Name} [${2:fields}]\n  ${3:Protocol}\n  $0)","description":"deftype"},
+        {"trigger":"fn","contents":"(fn [${1:arg-list}] $0)","description":"fn"},
+        {"trigger":"for","contents":"(for [${1:value} ${2:range}${3:\n      :let [${4:symbol} ${5:expr}]}${6:\n      :when ${7:conditional}}]\n  ${8:expr})","description":"for"},
+        {"trigger":"format","contents":"(format \"${1:format}\" ${2:strings})","description":"format"},
+        {"trigger":"fr","contents":"(fresh [${1:vars}]\n  $0)","description":"fresh"},
+        {"trigger":"if","contents":"(if ${1:test-expr}\n  ${2:then-expr}\n  ${3:else-expr})","description":"if"},
+        {"trigger":"import","contents":"(:import [${1:package}])","description":"import"},
+        {"trigger":"kawrgs","contents":"{:keys [${1:keys}]${2: :or {${3:defaults}}}}","description":"Keyword args"},
+        {"trigger":"let","contents":"(let [$1]\n  $0)","description":"let"},
+        {"trigger":"letfn","contents":"(letfn [(${1:name) [${2:args}]\n          $0)])","description":"letfn"},
+        {"trigger":"m","contents":"(${1:name} [${2:this} ${3:args}]\n  $0)","description":"method"},
+        {"trigger":"ns","contents":"(ns ${1:name}\n  $0)","description":"ns"},
+        {"trigger":"dotime","contents":"(dotimes [_ 10]\n  (time\n    (dotimes [_ ${1:times}]\n      $0)))","description":"Performance"},
+        {"trigger":"pm","contents":"(${1:name} [${2:this} ${3:args}])","description":"protocol method"},
+        {"trigger":"r*","contents":"(run* [q]\n  $0)","description":"run*"},
+        {"trigger":"re-f","contents":"(re-find #\"${1:regex}\" ${2:string})","description":"Regex Find"},
+        {"trigger":"re-m","contents":"(re-matches #\"${1:regex}\" ${2:string})","description":"Regex Math"},
+        {"trigger":"re-s","contents":"(re-seq #\"${1:regex}\" ${2:string})","description":"Regex Seq"},
+        {"trigger":"refer","contents":"(:refer-clojure :exclude [$0])","description":"refer"},
+        {"trigger":"require","contents":"(:require [${1:namespace}${2: :as [${3:name}]}])","description":"require"},
+        {"trigger":"rn","contents":"(run ${1:n} [q]\n  $0)","description":"run-n"},
+        {"trigger":"str-replace","contents":"[(${1:clojure.string}/replace ${2:string} #\"${3:regex}\" ${4:replacement})","description":"String Replace"},
+        {"trigger":"update-in","contents":"(update-in ${1:assoc-struct} [${2:keys}]\n  ${3:fn args})","description":"update-in"},
+        {"trigger":"use","contents":"(:use [${1:namespace}${2: :only [${3:fns}]}])","description":"use"}
+        // Errors and Exceptions
+
+        // 'Magic' Methods
+
+        // Standard Library
+    ]
+}

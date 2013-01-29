@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[(re-find #"${1:regex}" ${2:string})]]></content>
-    <tabTrigger>re-f</tabTrigger>
-    <scope>source.clojure</scope>
-    <description>Regex Find</description>
-</snippet>
