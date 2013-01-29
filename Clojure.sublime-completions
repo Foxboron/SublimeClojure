@@ -17,7 +17,7 @@
         "amap","ancestors","and","apply","areduce","array-map","aset","aset-boolean",
         "aset-byte","aset-char","aset-double","aset-float","aset-int","aset-long",
         "aset-short","assert","assoc","assoc!","associative?","atom","await",
-        "await-for","bases","bean","bigdec","bigint","biginteger","binding","bit-and",
+        "await-forbases","bean","bigdec","bigint","biginteger","binding","bit-and",
         "bit-and-not","bit-clear","bit-flip","bit-not","bit-or","bit-set","bit-shift-left",
         "bit-shift-right","bit-test","bit-xor","boolean","boolean-array","booleans",
         "bound-fn","bound-fn*","bound?","butlast","byte","byte-array","bytes","case",
@@ -27,15 +27,15 @@
         "concat","cond","conj","conj!","cons","constantly","construct-proxy","contains?",
         "count","counted?","create-ns","create-struct","cycle","dec","dec'","decimal?",
         "declare","default-data-readers","definline","definterface","defmacro","defn-",
-        "defonce","defstruct","deftype","delay","delay?","deliver","denominator","deref",
+        "defonce","defstruct","delay","delay?","deliver","denominator","deref",
         "derive","descendants","disj","disj!","dissoc","dissoc!","distinct","distinct?",
-        "doall","dorun","doseq","dosync","dotimes","doto","double","double-array","doubles",
+        "doall","dorun","dosync","doto","double","double-array","doubles",
         "drop","drop-last","drop-while","empty","empty?","ensure","enumeration-seq",
         "error-handler","error-mode","eval","even?","every-pred","every?","ex-data",
         "ex-info","extend","extend-protocol","extend-type","extenders","extends?",
         "false?","ffirst","file-seq","filter","filterv","find","find-keyword","find-ns",
         "find-var","first","flatten","float","float-array","float?","floats","flush","fn?",
-        "fnext","fnil","for","force","frequencies","future","future-call","future-cancel",
+        "fnext","fnil","force","frequencies","future","future-call","future-cancel",
         "future-cancelled?","future-done?","future?","gen-class","gen-interface","gensym",
         "get","get-in","get-method","get-proxy-class","get-thread-bindings","get-validator",
         "group-by","hash","hash-map","hash-set","identical?","identity","if-let","if-not",
@@ -76,7 +76,7 @@
         "unchecked-float","unchecked-inc","unchecked-inc-int","unchecked-int","unchecked-long",
         "unchecked-multiply","unchecked-multiply-int","unchecked-negate","unchecked-negate-int",
         "unchecked-remainder-int","unchecked-short","unchecked-subtract",
-        "unchecked-subtract-int","underive","update-proxy","use","val","vals",
+        "unchecked-subtract-int","underive","update-proxy","val","vals",
         "var-get","var-set","var?","vary-meta","vec","vector","vector-of","vector?",
         "when","when->","when->>","when-first","when-let","when-not","while","with-bindings",
         "with-bindings*","with-in-str","with-local-vars","with-meta","with-open","with-out-str",
@@ -86,26 +86,26 @@
         "flatten","fold","foldcat","folder","map","mapcat","monoid","reduce","reducer",
         "remove","take","take-while",
        
-	 // snippets
-        {"trigger":"require","contents":"(:require [${1:namespace}${2: :as [${3:name}]})","description":"require"},
-        {"trigger":"assoc","contents":"(assoc-in ${1:assoc-struct} [${2:keys}] ${3:value})","description":"Assoc-In"},
-        {"trigger":"com","contents":"(comment\n  $0\n  )","description":"comment"},
+     // snippets
+        {"trigger":":require","contents":"(:require [${1:namespace}${2: :as [${3:name}]})","description":"require"},
+        {"trigger":"assoc-in","contents":"(assoc-in ${1:assoc-struct} [${2:keys}] ${3:value})","description":"Assoc-In"},
+        {"trigger":"comment","contents":"(comment\n  $0\n  )","description":"comment"},
         {"trigger":"condp","contents":"(condp ${1:pred} ${2:expr}\n  $0)","description":"condp"},
-        {"trigger":"defm","contents":"(defmethod ${1:name} ${2:match}\n  [${3:args}]\n  $0)","description":"defmethod"},
-        {"trigger":"defmm","contents":"(defmulti ${1:name} ${2:dispatch-fn})","description":"defmulti"},
+        {"trigger":"defmethod","contents":"(defmethod ${1:name} ${2:match}\n  [${3:args}]\n  $0)","description":"defmethod"},
+        {"trigger":"defmulti","contents":"(defmulti ${1:name} ${2:dispatch-fn})","description":"defmulti"},
         {"trigger":"defn","contents":"defn ${1:name} ${2:\n  \"${3:doc-string}\"\n  }[${4:arg-list}]\n  $0)","description":"defn"},
-        {"trigger":"defp","contents":"(defprotocol ${1:Name}\n  $0)","description":"defprotocol"},
-        {"trigger":"defr","contents":"(defrecord ${1:Name} [${2:fields}]\n  ${3:Protocol}\n  $0)","description":"defrecord"},
+        {"trigger":"defprotocol","contents":"(defprotocol ${1:Name}\n  $0)","description":"defprotocol"},
+        {"trigger":"defrecord","contents":"(defrecord ${1:Name} [${2:fields}]\n  ${3:Protocol}\n  $0)","description":"defrecord"},
         {"trigger":"deftest","contents":"(deftest test-${1:name}\n  $0)","description":"deftest"},
         {"trigger":"doseq","contents":"(doseq [${1:value} ${2:range}${3:\n      :let [${5:symbol} ${6:expr}]}${7:\n      :when ${8:conditional}}]\n  ${9:exprs})","description":"doseq"},
-        {"trigger":"deft","contents":"(deftype ${1:Name} [${2:fields}]\n  ${3:Protocol}\n  $0)","description":"deftype"},
+        {"trigger":"deftype","contents":"(deftype ${1:Name} [${2:fields}]\n  ${3:Protocol}\n  $0)","description":"deftype"},
         {"trigger":"fn","contents":"(fn [${1:arg-list}] $0)","description":"fn"},
         {"trigger":"for","contents":"(for [${1:value} ${2:range}${3:\n      :let [${4:symbol} ${5:expr}]}${6:\n      :when ${7:conditional}}]\n  ${8:expr})","description":"for"},
         {"trigger":"format","contents":"(format \"${1:format}\" ${2:strings})","description":"format"},
         {"trigger":"fr","contents":"(fresh [${1:vars}]\n  $0)","description":"fresh"},
         {"trigger":"if","contents":"(if ${1:test-expr}\n  ${2:then-expr}\n  ${3:else-expr})","description":"if"},
         {"trigger":"import","contents":"(:import [${1:package}])","description":"import"},
-        {"trigger":"kawrgs","contents":"{:keys [${1:keys}]${2: :or {${3:defaults}}}}","description":"Keyword args"},
+        {"trigger":"kwargs","contents":"{:keys [${1:keys}]${2: :or {${3:defaults}}}}","description":"Keyword args"},
         {"trigger":"let","contents":"(let [$1]\n  $0)","description":"let"},
         {"trigger":"letfn","contents":"(letfn [(${1:name) [${2:args}]\n          $0)])","description":"letfn"},
         {"trigger":"m","contents":"(${1:name} [${2:this} ${3:args}]\n  $0)","description":"method"},
@@ -113,21 +113,20 @@
         {"trigger":"dotime","contents":"(dotimes [_ 10]\n  (time\n    (dotimes [_ ${1:times}]\n      $0)))","description":"Performance"},
         {"trigger":"pm","contents":"(${1:name} [${2:this} ${3:args}])","description":"protocol method"},
         {"trigger":"r*","contents":"(run* [q]\n  $0)","description":"run*"},
-        {"trigger":"re-f","contents":"(re-find #\"${1:regex}\" ${2:string})","description":"Regex Find"},
-        {"trigger":"re-m","contents":"(re-matches #\"${1:regex}\" ${2:string})","description":"Regex Math"},
-        {"trigger":"re-s","contents":"(re-seq #\"${1:regex}\" ${2:string})","description":"Regex Seq"},
+        {"trigger":"re-find","contents":"(re-find #\"${1:regex}\" ${2:string})","description":"Regex Find"},
+        {"trigger":"re-matches","contents":"(re-matches #\"${1:regex}\" ${2:string})","description":"Regex Math"},
+        {"trigger":"re-seq","contents":"(re-seq #\"${1:regex}\" ${2:string})","description":"Regex Seq"},
         {"trigger":"refer","contents":"(:refer-clojure :exclude [$0])","description":"refer"},
-        {"trigger":"require","contents":"(:require [${1:namespace}${2: :as [${3:name}]}])","description":"require"},
-        {"trigger":"rn","contents":"(run ${1:n} [q]\n  $0)","description":"run-n"},
+        {"trigger":"run","contents":"(run ${1:n} [q]\n  $0)","description":"run-n"},
         {"trigger":"str-replace","contents":"[(${1:clojure.string}/replace ${2:string} #\"${3:regex}\" ${4:replacement})","description":"String Replace"},
         {"trigger":"update-in","contents":"(update-in ${1:assoc-struct} [${2:keys}]\n  ${3:fn args})","description":"update-in"},
         {"trigger":"use","contents":"(:use [${1:namespace}${2: :only [${3:fns}]}])","description":"use"},
         
-    	// Errors and Exceptions
-    	//None
+    // Errors and Exceptions
+    //None
         
-    	// 'Magic' Methods
-    	//None
+    // 'Magic' Methods
+    //None
 
         // Standard Library
         "clojure.contrib.accumulators","clojure.contrib.agent-utils","clojure.contrib.apply-macro",
