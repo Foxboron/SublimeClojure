@@ -93,7 +93,7 @@
         {"trigger":"condp","contents":"(condp ${1:pred} ${2:expr}\n  $0)","description":"condp"},
         {"trigger":"defmethod","contents":"(defmethod ${1:name} ${2:match}\n  [${3:args}]\n  $0)","description":"defmethod"},
         {"trigger":"defmulti","contents":"(defmulti ${1:name} ${2:dispatch-fn})","description":"defmulti"},
-        {"trigger":"defn","contents":"defn ${1:name} ${2:\n  \"${3:doc-string}\"\n  }[${4:arg-list}]\n  $0)","description":"defn"},
+        {"trigger":"defn","contents":"(defn ${1:name} ${2:\n  \"${3:doc-string}\"\n  }[${4:arg-list}]\n  $0)","description":"defn"},
         {"trigger":"defprotocol","contents":"(defprotocol ${1:Name}\n  $0)","description":"defprotocol"},
         {"trigger":"defrecord","contents":"(defrecord ${1:Name} [${2:fields}]\n  ${3:Protocol}\n  $0)","description":"defrecord"},
         {"trigger":"deftest","contents":"(deftest test-${1:name}\n  $0)","description":"deftest"},
