@@ -1,5 +1,5 @@
 {
-    "scope": "source.clojure",
+    "scope": "source.clojure, source.clojurescript",
 
     "completions":
     [
