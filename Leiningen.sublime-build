@@ -1,7 +1,6 @@
 {
   "cmd": ["lein", "compile", ":all"],
-// Set this if leiningen not available in Sublime Text's path
-//  "path": "${PATH}:/path/with/lein",
+  "path": "${PATH}:/usr/local/bin",
   "working_dir": "$project_path",
   "selector": "source.clojure",
   "variants": [
